@@ -1,0 +1,23 @@
+/* TEAM */
+Clinic Name: Aura Dental Sanctuary
+Lead Prosthodontist & Medical Director: Dr. Ananya Sharma, MDS
+Periodontics, Digital Smile Design & Oral Implantology
+Alumni: AIIMS New Delhi & Manipal College of Dental Sciences
+Fellow: International Congress of Oral Implantologists (FICOI, USA)
+Certified: Invisalign® Platinum Provider
+Location: Indiranagar, Bengaluru, Karnataka, India
+
+/* CLINICAL FACILITY */
+Hospital Infection Control: European Class-B 7-Step Autoclave Sterilization
+Imaging: High-Definition CBCT 3D Bone Density Tomography & Intraoral 3D Scanners
+Anesthesia: Computerized Pain-Managed Local Delivery System
+Accreditation: NABH & IDA Compliant Protocols
+
+/* SITE & ARCHITECTURE */
+Architectural Philosophy: Scandinavian Acoustic Biophilic Operatory
+Design System: Atelier Warm Pearl & Medical Sage Teal
+Technology Stack: React 19, TypeScript, Tailwind CSS, Schema.org Microdata
+Standards: WCAG 2.1 Level AAA Accessible, Responsive Mobile First
+Contact: care@auradental.in
+Phone: +91 (080) 4920 4000
+Last Updated: September 2026

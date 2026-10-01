@@ -1,0 +1,6 @@
+{
+  "name": "Aura Dental Sanctuary | Advanced Dental Care & Aesthetics",
+  "description": "World-class restorative dentistry, dental implants, Invisalign, and smile design in Indiranagar, Bengaluru. Pain-managed clinical care in a serene sanctuary setting.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
