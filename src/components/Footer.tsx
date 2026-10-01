@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 export const Footer: React.FC = () => {
   return (
@@ -15,15 +15,21 @@ export const Footer: React.FC = () => {
                 className="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-on-primary"
                 aria-hidden="true"
               >
-                <span className="material-symbols-outlined text-base" style={{ fontVariationSettings: "'FILL' 1" }}>
+                <span
+                  className="material-symbols-outlined text-base"
+                  style={{ fontVariationSettings: "'FILL' 1" }}
+                >
                   dentistry
                 </span>
               </div>
-              <span className="font-display text-xl font-medium text-primary">Aura Dental Sanctuary</span>
+              <span className="font-display text-xl font-medium text-primary">
+                Aura Dental Sanctuary
+              </span>
             </div>
             <p className="font-body-md text-xs sm:text-sm text-on-surface-variant max-w-sm leading-relaxed">
-              Clinical excellence, gentle procedural empathy, and architectural serenity. Elevating oral healthcare
-              for discerning individuals and families across Bengaluru.
+              Clinical excellence, gentle procedural empathy, and architectural
+              serenity. Elevating oral healthcare for discerning individuals and
+              families across Bengaluru.
             </p>
             <div className="flex items-center gap-3 pt-2 text-on-surface-variant">
               <span className="font-label-sm text-[11px] border border-outline-variant/40 px-2.5 py-1 rounded-full font-medium">
@@ -142,8 +148,12 @@ export const Footer: React.FC = () => {
               Plot 482, 100ft Road, HAL 2nd Stage, Indiranagar, Bengaluru 560038
             </p>
             <div className="mt-3 space-y-1">
-              <p className="font-body-sm text-xs sm:text-sm text-on-surface-variant">Phone: +91 (080) 4920 4000</p>
-              <p className="font-body-sm text-xs sm:text-sm text-on-surface-variant">Email: care@auradental.in</p>
+              <p className="font-body-sm text-xs sm:text-sm text-on-surface-variant">
+                Phone: +91 (080) 4920 4000
+              </p>
+              <p className="font-body-sm text-xs sm:text-sm text-on-surface-variant">
+                Email: care@auradental.in
+              </p>
             </div>
           </div>
         </div>
@@ -151,20 +161,37 @@ export const Footer: React.FC = () => {
         {/* Copyright & Regulatory Bar */}
         <div className="pt-8 border-t border-outline-variant/30 flex flex-col md:flex-row items-center justify-between gap-4 font-body-sm text-xs text-on-surface-variant">
           <p>
-            © 2026 Aura Dental Sanctuary. Clinical Excellence &amp; Architectural Serenity. All rights reserved.
-            Registered under the Clinical Establishments Act.
+            © 2026 Aura Dental Sanctuary. Clinical Excellence &amp;
+            Architectural Serenity. All rights reserved. Registered under the
+            Clinical Establishments Act.
           </p>
-          <div className="flex items-center space-x-6 font-label-sm text-xs">
-            <a href="/robots.txt" target="_blank" className="hover:text-primary transition-colors">
+          <div className="hidden flex items-center space-x-6 font-label-sm text-xs">
+            <a
+              href="/robots.txt"
+              target="_blank"
+              className="hover:text-primary transition-colors"
+            >
               Robots.txt
             </a>
-            <a href="/sitemap.xml" target="_blank" className="hover:text-primary transition-colors">
+            <a
+              href="/sitemap.xml"
+              target="_blank"
+              className="hover:text-primary transition-colors"
+            >
               Sitemap
             </a>
-            <a href="/llms.txt" target="_blank" className="hover:text-primary transition-colors">
+            <a
+              href="/llms.txt"
+              target="_blank"
+              className="hover:text-primary transition-colors"
+            >
               LLMs.txt
             </a>
-            <a href="/humans.txt" target="_blank" className="hover:text-primary transition-colors">
+            <a
+              href="/humans.txt"
+              target="_blank"
+              className="hover:text-primary transition-colors"
+            >
               Humans.txt
             </a>
           </div>

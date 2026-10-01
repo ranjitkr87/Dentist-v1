@@ -3,37 +3,38 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState } from 'react';
-import { TreatmentItem, BookingFormData } from './types/dental';
-import { Header } from './components/Header';
-import { HeroSection } from './components/HeroSection';
-import { TrustMetrics } from './components/TrustMetrics';
-import { TreatmentsCatalog } from './components/TreatmentsCatalog';
-import { ImplantSpotlight } from './components/ImplantSpotlight';
-import { DoctorProfile } from './components/DoctorProfile';
-import { ClinicalAdvantages } from './components/ClinicalAdvantages';
-import { PatientJourney } from './components/PatientJourney';
-import { SanctuaryTour } from './components/SanctuaryTour';
-import { TestimonialsSection } from './components/TestimonialsSection';
-import { FAQAccordion } from './components/FAQAccordion';
-import { AppointmentBanner } from './components/AppointmentBanner';
-import { LocationContact } from './components/LocationContact';
-import { Footer } from './components/Footer';
-import { TreatmentModal } from './components/TreatmentModal';
+import React, { useState } from "react";
+import { TreatmentItem, BookingFormData } from "./types/dental";
+import { Header } from "./components/Header";
+import { HeroSection } from "./components/HeroSection";
+import { TrustMetrics } from "./components/TrustMetrics";
+import { TreatmentsCatalog } from "./components/TreatmentsCatalog";
+import { ImplantSpotlight } from "./components/ImplantSpotlight";
+import { DoctorProfile } from "./components/DoctorProfile";
+import { ClinicalAdvantages } from "./components/ClinicalAdvantages";
+import { PatientJourney } from "./components/PatientJourney";
+import { SanctuaryTour } from "./components/SanctuaryTour";
+import { TestimonialsSection } from "./components/TestimonialsSection";
+import { FAQAccordion } from "./components/FAQAccordion";
+import { AppointmentBanner } from "./components/AppointmentBanner";
+import { LocationContact } from "./components/LocationContact";
+import { Footer } from "./components/Footer";
+import { TreatmentModal } from "./components/TreatmentModal";
 
 export default function App() {
   // Appointment Form state shared across CTA triggers
   const [formData, setFormData] = useState<BookingFormData>({
-    fullName: '',
-    mobileNumber: '',
-    treatment: 'Dental Implants Consultation',
-    preferredDate: '',
-    preferredTime: 'Morning (10:00 AM - 1:00 PM)',
-    notes: '',
+    fullName: "",
+    mobileNumber: "",
+    treatment: "Dental Implants Consultation",
+    preferredDate: "",
+    preferredTime: "Morning (10:00 AM - 1:00 PM)",
+    notes: "",
   });
 
   // Selected Treatment Modal
-  const [selectedTreatmentModal, setSelectedTreatmentModal] = useState<TreatmentItem | null>(null);
+  const [selectedTreatmentModal, setSelectedTreatmentModal] =
+    useState<TreatmentItem | null>(null);
 
   // Pre-fill booking form with selected treatment and scroll to banner
   const handleSelectTreatmentForBooking = (treatmentTitle: string) => {
@@ -41,9 +42,9 @@ export default function App() {
       ...prev,
       treatment: treatmentTitle,
     }));
-    const banner = document.getElementById('appointment-banner');
+    const banner = document.getElementById("appointment-banner");
     if (banner) {
-      banner.scrollIntoView({ behavior: 'smooth' });
+      banner.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -52,8 +53,8 @@ export default function App() {
       {/* Top Navbar */}
       <Header
         onBookClick={() => {
-          const banner = document.getElementById('appointment-banner');
-          if (banner) banner.scrollIntoView({ behavior: 'smooth' });
+          const banner = document.getElementById("appointment-banner");
+          if (banner) banner.scrollIntoView({ behavior: "smooth" });
         }}
       />
 
@@ -61,14 +62,14 @@ export default function App() {
       <main id="main-content" tabIndex={-1}>
         <HeroSection
           onBookClick={() => {
-            const banner = document.getElementById('appointment-banner');
-            if (banner) banner.scrollIntoView({ behavior: 'smooth' });
+            const banner = document.getElementById("appointment-banner");
+            if (banner) banner.scrollIntoView({ behavior: "smooth" });
           }}
         />
 
         <TrustMetrics />
 
-        <TreatmentsCatalog onSelectTreatment={(treatment) => setSelectedTreatmentModal(treatment)} />
+        {/* <TreatmentsCatalog onSelectTreatment={(treatment) => setSelectedTreatmentModal(treatment)} /> */}
 
         <ImplantSpotlight onScheduleImplant={handleSelectTreatmentForBooking} />
 
